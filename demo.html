@@ -20,10 +20,10 @@ p.options input[type=checkbox] {
 }
 textarea#json-input {
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 pre#json-renderer {
-  border: 1px solid #aaa;
+  border: 4px solid #aaa;
 }
     </style>
 
@@ -45,19 +45,16 @@ $(function() {
     $('#json-renderer').jsonViewer(input, options);
   }
 
-  // Generate on click
   $('#btn-json-viewer').click(renderJson);
 
-  // Generate on option change
   $('p.options input[type=checkbox]').click(renderJson);
 
-  // Display JSON sample on page load
   renderJson();
 });
     </script>
   </head>
   <body>
-    <h1><a href="https://github.com/abodelot/jquery.json-viewer">jQuery json-viewer</a></h1>
+    <h1 style="text-align: center;"><a href="https://github.com/PulkitUjjainwal/JQuery-JSON-Viewer-">jQuery json-viewer</a></h1>
     <textarea id="json-input" autocomplete="off">
       {"widget": {
         "debug": "on",
